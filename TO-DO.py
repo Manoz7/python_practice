@@ -14,10 +14,17 @@ def add_tasks():
         choose = input("Do you want to add another task? (Y/N): ")
 
 add_tasks()
-print(tasks)
 
-# def view_tasks():
-#     for i in tasks:
-#         print(tasks[i])
 
-# view_tasks()
+def view_tasks():
+    print("The tasks are:")
+    for task in tasks:
+        print(task)
+
+view_tasks()
+
+def delete_tasks():
+    tasks.pop()
+
+delete_tasks()
+view_tasks()
